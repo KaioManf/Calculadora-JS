@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="./js/script.js" defer type="module"></script>
+</head>
+
+<body>
+
+    <div class="alert-error">
+        Digite somente números!
+    </div>
+
+    <div class="container">
+        <main class="card">
+            <form>
+                <h1 class="title">Cálculo</h1>
+                <div class="input-wrapper">
+                    <label for="n1">Número 1</label>
+                    <input id="n1" type="text" placeholder="37">
+                </div>
+
+                <div class="select">
+                    <select id="operador">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="n2">Número 2</label>
+                    <input id="n2" type="text" placeholder="75">
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+        </main>
+    </div>
+
+    <div class="modal-wrapper">
+        <div class="modal card">
+            <h2 class="title">
+                <button class="close"><img src="./assets/close.svg" alt="imagem para fechar o popup" srcset=""></button>
+                <span>A resposta da sua conta é de 28</span>
+            </h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
